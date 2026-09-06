@@ -1,1 +1,291 @@
-/* EduSphere CSS */
+/* EduSphere - Main CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f2a44;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #8ecae6;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: 600px;
+    padding: 150px 30px 80px;
+    background-color: #eaf4fb;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.tagline {
+    color: #176b9e;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    color: #0f2a44;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-text > p:not(.tagline) {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #176b9e;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0f2a44;
+}
+
+/* =========================
+   GENERAL SECTIONS
+   ========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.section h2,
+.resource-cta h2 {
+    color: #0f2a44;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card,
+.course-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.card h3,
+.course-card h3 {
+    color: #176b9e;
+    margin-bottom: 12px;
+}
+
+.card p,
+.course-card p {
+    color: #4b5563;
+}
+
+/* =========================
+   FEATURED COURSES
+   ========================= */
+
+.light-section {
+    max-width: none;
+    background-color: #f5f8fa;
+}
+
+.light-section .card-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.course-card span {
+    display: inline-block;
+    background-color: #eaf4fb;
+    color: #176b9e;
+
+    padding: 4px 10px;
+    border-radius: 15px;
+
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    margin-bottom: 15px;
+}
+
+.course-card a {
+    color: #176b9e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESOURCE SECTION
+   ========================= */
+
+.resource-cta {
+    background-color: #eaf4fb;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.resource-cta p {
+    margin-bottom: 25px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #0f2a44;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding-top: 180px;
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-text > p:not(.tagline) {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section h2,
+    .resource-cta h2 {
+        font-size: 27px;
+    }
+
+    .card,
+    .course-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
