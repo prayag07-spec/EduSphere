@@ -289,3 +289,90 @@ footer p {
         max-width: 100%;
     }
 }
+
+
+/* =========================
+   COURSES PAGE
+   ========================= */
+
+.page-header {
+    background-color: #eaf4fb;
+    text-align: center;
+    padding: 150px 30px 60px;
+}
+
+.page-header h1 {
+    color: #0f2a44;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card h2 {
+    color: #176b9e;
+    margin-bottom: 10px;
+}
+
+.course-card h4 {
+    color: #0f2a44;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.course-link {
+    margin-top: auto;
+    padding-top: 20px;
+    color: #176b9e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   COURSES PAGE MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .page-header {
+        padding-top: 180px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+}  
