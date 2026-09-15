@@ -376,3 +376,179 @@ footer p {
     }
 
 }  
+
+/* =========================
+   COURSE DETAILS PAGE
+   ========================= */
+
+.course-details-header {
+    background-color: #eaf4fb;
+    text-align: center;
+    padding: 150px 30px 60px;
+}
+
+.course-details-header h1 {
+    color: #0f2a44;
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.course-details-header > p:not(.tagline) {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.course-info span {
+    background-color: white;
+    color: #176b9e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* About Course */
+
+.details-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.details-content h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.details-content p {
+    margin-bottom: 15px;
+}
+
+
+/* What You Will Learn */
+
+.learning-list {
+    max-width: 750px;
+    margin: 35px auto 0;
+    text-align: left;
+}
+
+.learning-item {
+    background-color: white;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.learning-item span {
+    color: #176b9e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Course Topics */
+
+.topic-list {
+    max-width: 750px;
+    margin: 35px auto 0;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background-color: #f5f8fa;
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.topic span {
+    min-width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #176b9e;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+
+/* Course Outcome */
+
+.outcome-section {
+    background-color: #eaf4fb;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.outcome-box {
+    max-width: 750px;
+    margin: auto;
+}
+
+.outcome-box h2 {
+    color: #0f2a44;
+    margin-bottom: 15px;
+}
+
+.outcome-box p {
+    margin-bottom: 25px;
+}
+
+
+/* Course Details Mobile */
+
+@media (max-width: 600px) {
+
+    .course-details-header {
+        padding-top: 180px;
+    }
+
+    .course-details-header h1 {
+        font-size: 36px;
+    }
+
+    .course-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-info span {
+        width: fit-content;
+    }
+
+    .details-content {
+        text-align: left;
+    }
+
+    .learning-item {
+        align-items: flex-start;
+    }
+
+}
