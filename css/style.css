@@ -552,3 +552,112 @@ footer p {
     }
 
 }
+/* =========================
+   RESOURCES PAGE
+   ========================= */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.resource-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card h3 {
+    color: #176b9e;
+    margin-bottom: 12px;
+}
+
+.resource-card p {
+    color: #4b5563;
+}
+
+.resource-link {
+    margin-top: 20px;
+
+    color: #176b9e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   STUDY PLAN TABLE
+   ========================= */
+
+.table-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #d9e2e8;
+    text-align: left;
+}
+
+th {
+    background-color: #0f2a44;
+    color: white;
+}
+
+td {
+    color: #4b5563;
+}
+
+
+/* =========================
+   RESOURCES MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
