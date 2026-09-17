@@ -157,6 +157,12 @@ header {
     flex: 1;
     min-width: 250px;
     max-width: 350px;
+    transition: 0.3s;
+}
+
+.card:hover,
+.course-card:hover {
+    transform: translateY(-5px);
 }
 
 .card h3,
