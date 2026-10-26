@@ -1,273 +1,94 @@
-<!DOCTYPE html>
+<escape><!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact - EduSphere</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us - EduSphere</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
 
     <!-- Header -->
     <header>
-        <nav class="navbar">
+        <nav>
+            <div class="logo">
+                <h1>EduSphere</h1>
+            </div>
 
-            <div class="logo">EduSphere</div>
-
-            <ul class="nav-links">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="registration.html">Register</a></li>
             </ul>
-
         </nav>
     </header>
 
-
-    <!-- Main Content -->
-    <main>
-
-        <!-- Page Header -->
-        <section class="page-header">
-
-            <p class="tagline">Learn • Practice • Grow</p>
-
-            <h1>Contact Us</h1>
-
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
             <p>
-                Have a question or need help?
-                Get in touch with the EduSphere team.
+                Have any questions or suggestions?
+                Feel free to contact us using the form below.
             </p>
 
-        </section>
-
-
-        <!-- Contact Information and Form -->
-        <section class="section">
-
-            <div class="contact-container">
-
-                <!-- Contact Information -->
-                <div class="contact-info">
-
-                    <h2>Get in Touch</h2>
-
-                    <p>
-                        We are happy to hear from students and
-                        help with questions about EduSphere.
-                    </p>
-
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>support@edusphere.com</p>
-                    </div>
-
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p>+91 XXXXX XXXXX</p>
-                    </div>
-
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>India</p>
-                    </div>
-
-                    <div class="contact-item">
-                        <h3>Support Hours</h3>
-                        <p>Monday - Friday, 9 AM - 5 PM</p>
-                    </div>
-
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        required
+                    >
                 </div>
 
-
-                <!-- Contact Form -->
-                <div class="contact-form">
-
-                    <h2>Send Us a Message</h2>
-
-                    <form action="#" method="post">
-
-                        <div class="form-group">
-
-                            <label for="full-name">
-                                Full Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="full-name"
-                                name="full_name"
-                                placeholder="Enter your full name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Enter your email"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="subject">
-                                Subject
-                            </label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="Enter the subject"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="6"
-                                placeholder="Write your message"
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <button type="submit" class="btn">
-                            Send Message
-                        </button>
-
-                    </form>
-
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
                 </div>
 
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+                </div>
 
-        </section>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+                </div>
 
+                <button type="submit" class="btn">Send Message</button>
 
-        <!-- FAQ -->
-        <section class="section light-section">
-
-            <h2>Frequently Asked Questions</h2>
-
-            <p class="section-intro">
-                Here are some common questions about EduSphere.
-            </p>
-
-            <div class="faq-container">
-
-                <article class="faq-item">
-
-                    <h3>What is EduSphere?</h3>
-
-                    <p>
-                        EduSphere is a student-focused educational
-                        website that provides courses, resources
-                        and study guidance.
-                    </p>
-
-                </article>
-
-
-                <article class="faq-item">
-
-                    <h3>Who can use EduSphere?</h3>
-
-                    <p>
-                        EduSphere is mainly designed for students,
-                        especially beginners who want to improve
-                        their knowledge and skills.
-                    </p>
-
-                </article>
-
-
-                <article class="faq-item">
-
-                    <h3>Are the courses available online?</h3>
-
-                    <p>
-                        EduSphere currently provides course
-                        information and learning guidance through
-                        the website.
-                    </p>
-
-                </article>
-
-
-                <article class="faq-item">
-
-                    <h3>Can I contact the EduSphere team?</h3>
-
-                    <p>
-                        Yes. You can use the contact form above
-                        to send your questions or feedback.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Final Message -->
-        <section class="outcome-section">
-
-            <div class="outcome-box">
-
-                <h2>We Would Love to Hear From You</h2>
-
-                <p>
-                    Send us your questions, suggestions or feedback
-                    and help us improve EduSphere.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
+                <p id="contactFormMessage" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-
-        <p>© 2026 EduSphere. All rights reserved.</p>
-
-        <p>Learn • Practice • Grow</p>
-
+        <p>&copy; 2026 EduSphere. All Rights Reserved.</p>
     </footer>
 
-</body>
+    <script src="js/contact.js" defer></script>
 
-</html>
+</body>
+</html></escape>
