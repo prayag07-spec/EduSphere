@@ -938,3 +938,98 @@ td {
     }
 
 }
+
+/* ============================= */
+/* Registration Page */
+/* ============================= */
+
+.registration-section {
+    padding: 60px 20px;
+    min-height: 70vh;
+}
+
+.registration-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registration-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.form-message {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .registration-section {
+        padding: 30px 15px;
+    }
+
+    .registration-container {
+        padding: 20px;
+    }
+
+    .registration-container h1 {
+        font-size: 24px;
+    }
+
+}
