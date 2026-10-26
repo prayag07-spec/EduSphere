@@ -734,6 +734,19 @@ td {
    CONTACT PAGE
    ========================= */
 
+.contact {
+    padding: 150px 30px 70px;
+    background-color: #f5f8fa;
+    text-align: center;
+}
+
+.contact > .container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Contact Layout */
+
 .contact-container {
     max-width: 1050px;
     margin: auto;
@@ -745,6 +758,8 @@ td {
     text-align: left;
 }
 
+/* Contact Information and Form */
+
 .contact-info,
 .contact-form {
     background-color: white;
@@ -754,11 +769,15 @@ td {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Contact Headings */
+
 .contact-info h2,
 .contact-form h2 {
     color: #0f2a44;
     margin-bottom: 20px;
 }
+
+/* Contact Information */
 
 .contact-info > p {
     color: #4b5563;
@@ -777,7 +796,6 @@ td {
 .contact-item p {
     color: #4b5563;
 }
-
 
 /* Contact Form */
 
@@ -814,10 +832,19 @@ td {
     border-color: #176b9e;
 }
 
+/* Contact Button */
+
 .contact-form .btn {
     border: none;
     cursor: pointer;
     font-size: 15px;
+}
+
+/* Contact Message */
+
+#contactFormMessage {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 
@@ -867,10 +894,47 @@ td {
 
 }
 
+@media (max-width: 700px) {
+
+    header nav,
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    header nav ul,
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul a,
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .contact {
+        padding-top: 180px;
+    }
+
+}
+
 @media (max-width: 600px) {
 
     .faq-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
     }
 
 }
