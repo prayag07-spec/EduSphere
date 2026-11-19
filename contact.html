@@ -1,94 +1,132 @@
-<escape><!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us - EduSphere</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/contact.js" defer></script>
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
-        <nav>
-            <div class="logo">
-                <h1>EduSphere</h1>
-            </div>
+        <nav class="navbar">
 
-            <ul>
+            <a href="index.html" class="logo">EduSphere</a>
+
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="registration.html">Register</a></li>
             </ul>
+
         </nav>
     </header>
 
+
     <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>
-                Have any questions or suggestions?
-                Feel free to contact us using the form below.
-            </p>
+    <main>
 
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input
-                        type="text"
-                        id="full-name"
-                        name="full_name"
-                        required
-                    >
-                </div>
+        <section class="contact">
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
-                </div>
+            <div class="container">
 
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required
-                    >
-                </div>
+                <h2>Contact Us</h2>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                    ></textarea>
-                </div>
+                <p>
+                    Have any questions or suggestions?
+                    Feel free to contact us using the form below.
+                </p>
 
-                <button type="submit" class="btn">Send Message</button>
+                <form id="contactForm">
 
-                <p id="contactFormMessage" aria-live="polite"></p>
-            </form>
-        </div>
-    </section>
+                    <div class="form-group">
+
+                        <label for="full-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn" id="contactButton">
+                        Send Message
+                    </button>
+
+                    <p id="contactFormMessage" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
 
     <!-- Footer -->
     <footer>
+
         <p>&copy; 2026 EduSphere. All Rights Reserved.</p>
+
     </footer>
 
-    <script src="js/contact.js" defer></script>
-
 </body>
-</html></escape>
+</html>
